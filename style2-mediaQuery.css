@@ -1,0 +1,186 @@
+/* 4k view */
+
+@media only screen and (max-width: 2560px) {
+    .circle {
+        top: -9px;
+    }
+    .footer {
+        right: 0px;
+        left: 15px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .circle {
+        top: -5px;
+    }
+    .footer {
+        right: 0px;
+        left: 0px;
+    }
+}
+
+
+/* Desktop view */
+
+@media only screen and (max-width: 1300px) {
+    .left {
+        /* background-color: red; */
+        border-radius: 15px;
+        position: absolute;
+        left: -100%;
+        width: 30%;
+        transition: all .2s ease-in-out;
+        z-index: 1;
+    }
+    .close {
+        font-size: 23px;
+        display: flex;
+        float: right;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #closebtn {
+        cursor: pointer;
+    }
+    .right {
+        width: 100%;
+    }
+    .card {
+        width: 18vw;
+    }
+    .play-bar {
+        width: 75vw;
+    }
+    #hamburger {
+        display: inline;
+        font-size: 23px;
+        cursor: pointer;
+    }
+}
+
+
+/* laptop 1024 */
+
+@media only screen and (max-width: 1024px) {
+    .left {
+        /* background-color: red; */
+        border-radius: 15px;
+        position: absolute;
+        left: -100%;
+        width: 37%;
+        transition: all .2s ease-in-out;
+        z-index: 1;
+    }
+    .circle {
+        top: -4px;
+    }
+    .play-r {
+        position: absolute;
+        left: 78px;
+        bottom: 100px;
+        /* top: 110px; */
+    }
+}
+
+
+/* TABLET SCREEN */
+
+@media only screen and (max-width: 768px) {
+    .left {
+        border-radius: 15px;
+        position: absolute;
+        left: -100%;
+        width: 50%;
+        transition: all .2s ease-in-out;
+        z-index: 1;
+    }
+    .card-cont {
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 22vw;
+    }
+    .circle {
+        top: -4px;
+    }
+    /* .card:nth-child(even) {
+        display: none;
+    } */
+}
+
+
+/* Mobile view */
+
+@media only screen and (max-width: 425px) {
+    .left {
+        border-radius: 15px;
+        position: absolute;
+        left: -100%;
+        width: 94.2%;
+        transition: all .2s ease-in-out;
+        z-index: 1;
+    }
+    .footer {
+        right: 9px;
+        border-radius: 10px;
+    }
+    .card-cont {
+        justify-content: center;
+    }
+    .card {
+        font-size: 10px;
+    }
+    .card {
+        width: 30vw;
+    }
+    .card>.play {
+        display: none;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .nav :nth-child(2) {
+        display: none;
+    }
+    .nav :nth-child(3) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .left {
+        border-radius: 4px;
+        position: absolute;
+        left: -100%;
+        width: 92.2%;
+        transition: all .2s ease-in-out;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .nav-btn {
+        height: 2rem;
+        width: 3rem;
+        font-size: 10px;
+    }
+    .nav-btn:hover {
+        background-color: var(--onhover);
+        color: black;
+        font-size: 10px;
+        transform: scale(1);
+    }
+}

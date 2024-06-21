@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echozz Music</title>
+    <link rel="icon" type="image/x-icon" href="MainLogo.svg">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style2-mediaQuery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container bg-1">
+        <div class="left ">
+            <div class="close">
+                <i class="fa-solid fa-xmark" id="closebtn"></i>
+            </div>
+            <div class="home bg-2 brdr-1 m-1">
+                <div class="logosec flex">
+                    <div class="logo"><i class="fa-brands fa-battle-net logo-in"></i></div>
+                    <!-- <div class="logo"><i class="fa-solid fa-ghost logo-in"></i></div> -->
+                    <div class="brand_nm lobster-regular">Echozz</div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="homeIndex.html" rel="noopener noreferrer" class="flex"><i class="fa-solid fa-magnifying-glass i1"></i><p>Search</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="homeIndex.html" rel="noopener noreferrer" class="flex"><i class="fa-solid fa-house i1"></i>
+                        <p>Home</p>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="library bg-2 brdr-1 m-1 p-1">
+                <div class="lib flex">
+                    <i class="fa-solid fa-soap"></i>
+                    <p>Your Library</p>
+                </div>
+                <div class="songslib">
+                    <ul>
+                        <!-- <li>
+                            <i class="fa-solid fa-music"></i>
+                            <div class="info">
+                                <div>
+                                    <p>Song name</p>
+                                </div>
+                                <div>
+                                    <p>Song Artist</p>
+                                </div>
+                            </div>
+                            <p>Play now</p>
+                            <i class="fa-regular fa-circle-play"></i>
+                        </li> -->
+                        <!-- <li>Song 1</li>
+                        <li>Song 1</li>
+                        <li>Song 1</li>
+                        <li>Song 1</li>
+                        <li>Song 1</li>
+                        <li>Song 1</li>
+                        <li>Song 1</li> -->
+                        <!-- <li>Song 1</li>
+                        <li>Song 1</li>
+                        <li>Song 1</li> -->
+                    </ul>
+                </div>
+
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- Right Section innitiated -->
+        <div class="right">
+            <div class="header flex brdr-1 m-1">
+
+                <div class="nav">
+                    <i class=" fa-solid fa-burger " id="hamburger"></i>
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="navbtn">
+                    <button class="nav-btn">Log in</button>
+                    <button class="nav-btn">Sign up</button>
+                </div>
+            </div>
+
+            <div class="playlist brdr-1 m-1">
+                <h2>All Palylists</h2>
+
+                <div class="card-cont flex m-1 ">
+                    <div data-folder="pr2" class="card flex-a-j-c">
+                        <img src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="Img">
+                        <h3>Dinner With Friends</h3>
+                        <div class="para">
+                            <p>The perfect </p>
+                            <p>soundtrack to those long nights over dinner</p>
+                        </div>
+                        <div class="play play-r">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div data-folder="pr1" class="card flex-a-j-c">
+                        <img src="https://i.scdn.co/image/ab67656300005f1f9114d741247e2d26a7b48b6f" alt="Img">
+                        <h3>Shree Krishna Leela</h3>
+                        <div class="para">
+                            <p>The gentle sound of </p>
+                            <p>some of the greatest voices and instrumentalists in Jazz. Your Jazz dinner soundtrack.</p>
+                        </div>
+                        <div class="play play-r">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div data-folder="pr2" class="card flex-a-j-c">
+                        <img src="https://i.scdn.co/image/ab67656300005f1f099a357ed0a2a39424f2903d" alt="Img">
+                        <h3>The Horror</h3>
+                        <div class="para">
+                            <p>Soft electronic music </p>
+                            <p>for your dinner.</p>
+                        </div>
+                        <div class="play play-r">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div data-folder="pr3" class="card flex-a-j-c">
+                        <img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="Img">
+                        <h3>Lofi Beats</h3>
+                        <div class="para">
+                            <p>An uplifting yet </p>
+                            <p>tasteful dinner playlist with a guaranteed feel good vibe.</p>
+                        </div>
+                        <div class="play play-r">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div data-folder="pr4" class="card flex-a-j-c">
+                        <img src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d" alt="Img">
+                        <h3>Bossa Nova Dinner</h3>
+                        <div class="para">
+                            <p>Soundtrack your cozy </p>
+                            <p> dinner with bossa nova jazz.</p>
+                        </div>
+                        <div class="play play-r">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div data-folder="pr5" class="card flex-a-j-c">
+                        <img src="https://i.scdn.co/image/ab67706f00000002bdeb1c317ac2dd10f2397e4c" alt="Img">
+                        <h3>Jazz in The Background</h3>
+                        <div class="para">
+                            <p>Soundtrack your cozy </p>
+                            <p> dinner with bossa nova jazz.</p>
+                        </div>
+                        <div class="play play-r">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div data-folder="pr2" class="card flex-a-j-c">
+                        <img src="https://i.scdn.co/image/ab67706f000000023877cd545591ee648ef59b92" alt="Img">
+                        <h3>Today's Top Hits</h3>
+                        <div class="para">
+                            <p>Soundtrack your cozy </p>
+                            <p> dinner with bossa nova jazz.</p>
+                        </div>
+                        <div class="play play-r">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="play-bar">
+                    <marquee behavior="" direction="">
+                        <div class="songinfo">
+
+                        </div>
+                    </marquee>
+
+                    <div class="controll flex-a-j">
+                        <i id="prev" class="fa-solid fa-backward"></i>
+                        <img src="play2.svg" alt="Pause" class="play2">
+                        <i id="next" class="fa-solid fa-forward"></i>
+                    </div>
+                    <div class="songTimer">
+                        <div class="songtime">
+                        </div>
+                        <div class="volume">
+                            <img src="volumeon.svg" alt="">
+                            <div class="range"><input type="range" name="volume" min="0" max="100" id=""></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="prog-bar">
+                        <div class="circle"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/7340effa7d.js" crossorigin="anonymous"></script>
+<script src="script2.js"></script>
+
+</html>
