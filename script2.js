@@ -18,7 +18,7 @@ function secondsToMinutesSeconds(seconds) {
     return `${formattedMinutes}:${formattedSeconds}`;
 }
 
-
+// ./Projsongs/pr5/Arctic Monkeys - I Wanna Be Yours (Lyrics).mp3
 // Transferring songs from the projsong library to the song library
 async function getSongs(folder) {
     currfolder = folder;
@@ -82,7 +82,7 @@ const playMusic = (track, pause = false) => {
 
 async function main() {
     //getting the list of songs
-    await getSongs("Projsongs/pr2");
+    await getSongs("./Projsongs/pr2");
     playMusic(songs[0], true)
     console.log(songs);
 
