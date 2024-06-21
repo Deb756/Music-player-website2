@@ -18,41 +18,12 @@ function secondsToMinutesSeconds(seconds) {
     return `${formattedMinutes}:${formattedSeconds}`;
 }
 
-// async function getSongs(folder) {
-//     currfolder = folder;
-//     let response = await fetch(`${folder}/songs.json`);
-//     let data = await response.json();
-//     songs = data.songs;
-
-//     let songUL = document.querySelector(".songslib ul");
-//     songUL.innerHTML = "";
-//     for (const song of songs) {
-//         songUL.innerHTML += `<li>
-//             <i class="fa-solid fa-music"></i>
-//             <div class="info">
-//                 <div>${song}</div>
-//                 <div>DEBABRAT</div>
-//             </div>
-//             Play now
-//             <i class="fa-regular fa-circle-play"></i></li>`;
-//     }
-
-//     Array.from(document.querySelectorAll(".songslib li")).forEach(e => {
-//         e.addEventListener("click", () => {
-//             playMusic(e.querySelector(".info div").innerHTML.trim());
-//         });
-//     });
-
-//     return songs;
-// }
 
 // Transferring songs from the projsong library to the song library
 async function getSongs(folder) {
     currfolder = folder;
     // let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
-    // http://127.0.0.1:5500/${folder}/
-    // https://github.com/Deb756/Music-player-website2/tree/main/Projsongs/pr2
-    let a = await fetch(`${folder}/songs.json`); //http://127.0.0.1:5501/Projsongs/
+    let a = await fetch(`${folder}/`); //http://127.0.0.1:5501/Projsongs/
     let response = await a.text();
     console.log(response);
     let div = document.createElement("div");
