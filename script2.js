@@ -23,7 +23,9 @@ function secondsToMinutesSeconds(seconds) {
 async function getSongs(folder) {
     currfolder = folder;
     // let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
-    let a = await fetch(`http://127.0.0.1:5500/${folder}/`); //http://127.0.0.1:5501/Projsongs/
+    // http://127.0.0.1:5500/${folder}/
+    // https://github.com/Deb756/Music-player-website2/tree/main/Projsongs/pr2
+    let a = await fetch(`https://github.com/Deb756/Music-player-website2/tree/main/${folder}/`); //http://127.0.0.1:5501/Projsongs/
     let response = await a.text();
     console.log(response);
     let div = document.createElement("div");
