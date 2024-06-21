@@ -18,10 +18,10 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currfolder = folder;
-    console.log(`Fetching songs from ${folder}/`);
+    console.log(`Fetching songs from ${folder}/songs.json`);
 
     try {
-        let response = await fetch(`${folder}/`);
+        let response = await fetch(`${folder}/songs.json`);
         if (!response.ok) {
             console.error(`Failed to fetch songs.json: ${response.status}`);
             return [];
