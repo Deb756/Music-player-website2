@@ -82,7 +82,7 @@ const playMusic = (track, pause = false) => {
 
 async function main() {
     //getting the list of songs
-    await getSongs("./Projsongs/pr2/");
+    await getSongs("./Projsongs/pr2/songs.json");
     playMusic(songs[0], true)
     console.log(songs);
 
