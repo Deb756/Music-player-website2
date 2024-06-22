@@ -22,8 +22,9 @@ function secondsToMinutesSeconds(seconds) {
 // Transferring songs from the projsong library to the song library
 async function getSongs(folder) {
     currfolder = folder;
+    // https://github.com/Deb756/Music-player-website2/tree/main/Projsongs/pr1
     // let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
-    let a = await fetch(`./Projsongs/${folder}`); //http://127.0.0.1:5501/Projsongs/
+    let a = await fetch(`https://github.com/Deb756/Music-player-website2/tree/main/${folder}`); //http://127.0.0.1:5501/Projsongs/
     let response = await a.text();
     console.log(response);
     let div = document.createElement("div");
@@ -82,7 +83,7 @@ const playMusic = (track, pause = false) => {
 
 async function main() {
     //getting the list of songs
-    await getSongs("./pr1");
+    await getSongs("./Projsongs/pr1");
     playMusic(songs[0], true)
     console.log(songs);
 
